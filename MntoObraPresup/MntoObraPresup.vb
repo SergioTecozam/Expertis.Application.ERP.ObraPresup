@@ -2747,7 +2747,6 @@ Public Class MntoObraPresup
         '
         Me.GridTrabajos.AdvSearchColumns = New Solmicro.Expertis.Engine.UI.AdvSearchColumns(New Solmicro.Expertis.Engine.UI.AdvSearchColumn() {New Solmicro.Expertis.Engine.UI.AdvSearchColumn("IDTipoTrabajo", "ObraTipoTrabajo", "IDTipoTrabajo"), New Solmicro.Expertis.Engine.UI.AdvSearchColumn("IDSubtipoTrabajo", "ObraSubtipoTrabajo", "IDSubtipoTrabajo"), New Solmicro.Expertis.Engine.UI.AdvSearchColumn("IDUDMedida", "UdMedida", "IDUDMedida"), New Solmicro.Expertis.Engine.UI.AdvSearchColumn("IDArticulo", "Articulo", "IDArticulo"), New Solmicro.Expertis.Engine.UI.AdvSearchColumn("IDCentroGestion", "CentroGestion", "IDCentroGestion"), New Solmicro.Expertis.Engine.UI.AdvSearchColumn("SubSubTipoTrabajo", "ObraSubSubtipoTrabajo", "IDSubSubtipoTrabajo"), New Solmicro.Expertis.Engine.UI.AdvSearchColumn("CodTrabajoPadre", "ObraTrabajoPresup", "CodTrabajo", New Solmicro.Expertis.Engine.UI.ASSelectedColumns(New Solmicro.Expertis.Engine.UI.ASSelectedColumn() {New Solmicro.Expertis.Engine.UI.ASSelectedColumn("IDTrabajoPresup", "IDTrabajoPresupPadre")}))})
         Me.GridTrabajos.AllowDrop = True
-        Me.GridTrabajos.AllowDelete = InheritableBoolean.True
         GridTrabajos_DesignTimeLayout_Reference_0.Instance = CType(resources.GetObject("GridTrabajos_DesignTimeLayout_Reference_0.Instance"), Object)
         GridTrabajos_DesignTimeLayout.LayoutReferences.AddRange(New Janus.Windows.Common.Layouts.JanusLayoutReference() {GridTrabajos_DesignTimeLayout_Reference_0})
         GridTrabajos_DesignTimeLayout.LayoutString = resources.GetString("GridTrabajos_DesignTimeLayout.LayoutString")
@@ -8469,6 +8468,8 @@ Public Class MntoObraPresup
                 ImprimirMediciones("PresCartaCompromiso.rpt", e)
             Case "PRESNUEVOMED"
                 ImprimirMediciones("PresCartaCompromiso.rpt", e)
+            Case "PRESNUEVOSV"
+                ImprimirMediciones("PresupuestoNuevoSinVal.rpt", e)
 
 
         End Select
